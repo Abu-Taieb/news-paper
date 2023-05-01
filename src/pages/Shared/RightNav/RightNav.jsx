@@ -1,4 +1,5 @@
 import React from "react";
+import'./RightNav.css'
 import { Button, ListGroup } from "react-bootstrap";
 import {
   FaGoogle,
@@ -42,16 +43,15 @@ const RightNav = () => {
         </ListGroup>
       </div>
       <QZoon></QZoon>
-      <div className="my-5">
-        <div className="text-center my-2">
-          <h6>Create an Amazing Newspaper</h6>
-          <p>
+      <div className="my-5 bg-image p-5">
+        <div className="text-center text-light my-2">
+          <h6 className="fw-bold fs-3 lh-sm">Create an Amazing Newspaper</h6>
+          <p className="my-4">
             Discover thousands of options, easy to customize layouts, one-click
             to import demo and much more.
           </p>
-          <Button variant="danger">Learn More</Button>
+          <Button className="my-3 fw-bold" variant="danger">Learn More</Button>
         </div>
-        <img src={bg} alt="" />
       </div>
     </div>
   );

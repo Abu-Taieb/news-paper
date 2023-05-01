@@ -26,7 +26,7 @@ const Header = () => {
         <Button className="" variant="danger">
           Latest
         </Button>
-        <Marquee className="text-danger" speed={50}>
+        <Marquee className="" speed={50}>
           I can be a React component, multiple React components, or just some
           text. I can be a React component, multiple React components, or just
           some text.

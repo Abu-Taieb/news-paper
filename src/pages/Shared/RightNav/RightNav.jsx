@@ -8,6 +8,8 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+import QZoon from "../QZoon/QZoon";
+import bg from "../../../assets/bg.png";
 
 const RightNav = () => {
   return (
@@ -38,6 +40,18 @@ const RightNav = () => {
             <FaLinkedinIn /> LinkedIn
           </ListGroup.Item>
         </ListGroup>
+      </div>
+      <QZoon></QZoon>
+      <div className="my-5">
+        <div className="text-center my-2">
+          <h6>Create an Amazing Newspaper</h6>
+          <p>
+            Discover thousands of options, easy to customize layouts, one-click
+            to import demo and much more.
+          </p>
+          <Button variant="danger">Learn More</Button>
+        </div>
+        <img src={bg} alt="" />
       </div>
     </div>
   );

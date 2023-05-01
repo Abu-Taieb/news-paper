@@ -19,8 +19,7 @@ const NewsCard = ({ news }) => {
         <Card.Title>{title}</Card.Title>
         <img className="img-fluid" src={image_url} alt="" />
         <Card.Text>
-            {details.length < 245 ? <>{details}</> : <>{details.slice(0, 246)}... <Link className="text-decoration-none fw-bold text-info" to={`/news/${_id}`}> Read more</Link> </>
-            }
+            
         </Card.Text>
       </Card.Body>
       <Card.Footer className="text-muted">2 days ago</Card.Footer>

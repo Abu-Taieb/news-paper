@@ -10,7 +10,6 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import QZoon from "../QZoon/QZoon";
-import bg from "../../../assets/bg.png";
 
 const RightNav = () => {
   return (

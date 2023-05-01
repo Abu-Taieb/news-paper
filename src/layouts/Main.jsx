@@ -15,7 +15,7 @@ const Main = () => {
             <LeftNav></LeftNav>
           </Col>
           <Col lg={6}>
-            <h3>Main Content Coming Soon</h3>
+          <h5 className='my-2 fw-bold text-secondary'>Dragon News Home</h5>
           </Col>
           <Col lg={3}>
             <RightNav></RightNav>

@@ -4,8 +4,8 @@ import moment from "moment";
 import Marquee from "react-fast-marquee";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
-import { Button, Container } from "react-bootstrap";
+import { faCalendarDays, faUser } from "@fortawesome/free-solid-svg-icons";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 
 const Header = () => {
   return (
@@ -23,18 +23,35 @@ const Header = () => {
         </p>
       </div>
       <div className="d-flex bg-warning rounded">
-        <Button className="" variant="danger">Latest</Button>
+        <Button className="" variant="danger">
+          Latest
+        </Button>
         <Marquee className="text-danger" speed={50}>
           I can be a React component, multiple React components, or just some
-          text. I can be a React component, multiple React components, or just some
-          text.
+          text. I can be a React component, multiple React components, or just
+          some text.
         </Marquee>
       </div>
-
-
-
-
-
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Container>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mx-auto">
+              <Nav.Link href="#features">Home</Nav.Link>
+              <Nav.Link href="#pricing">About</Nav.Link>
+              <Nav.Link href="#pricing">Career</Nav.Link>
+            </Nav>
+            <Nav className="">
+              <Nav.Link href="#deets">
+              <FontAwesomeIcon icon={faUser} />
+              </Nav.Link>
+              <Nav.Link eventKey={2} href="#memes">
+              <Button variant="secondary">Log In</Button>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </Container>
   );
 };
